@@ -754,8 +754,6 @@ namespace FFXIV_TexTools2.IO
 
                     int nameSize = BitConverter.ToUInt16(br.ReadBytes(4).Reverse().ToArray(), 0);
 
-                    br.ReadBytes(16);
-
                     int iconNum = BitConverter.ToUInt16(br.ReadBytes(4).Reverse().ToArray(), 0);
 
                     if (iconNum != 0)
@@ -1836,12 +1834,12 @@ namespace FFXIV_TexTools2.IO
 
                                     if (!hasSecondary)
                                     {
-                                        br.ReadBytes(98);
+                                        br.ReadBytes(90);
                                         icon = BitConverter.ToUInt16(br.ReadBytes(2).Reverse().ToArray(), 0);
                                     }
                                     else
                                     {
-                                        br.ReadBytes(94);
+                                        br.ReadBytes(86);
                                         icon = BitConverter.ToUInt16(br.ReadBytes(2).Reverse().ToArray(), 0);
                                     }
 
@@ -1855,7 +1853,7 @@ namespace FFXIV_TexTools2.IO
                                     br.ReadBytes(2);
                                     br.ReadBytes(lastText);
 
-                                    var name = Encoding.UTF8.GetString(br.ReadBytes(entrySize - (lastText + 160))).Replace("\0", "");
+                                    var name = Encoding.UTF8.GetString(br.ReadBytes(entrySize - (lastText + 152))).Replace("\0", "");
                                     item.ItemName = new string(name.Where(c => !char.IsControl(c)).ToArray());
 
                                     if (item.ItemCategory.Equals("0") || item.ItemCategory.Equals("1") || item.ItemCategory.Equals("2") || item.ItemCategory.Equals("13") || item.ItemCategory.Equals("14"))
@@ -1908,7 +1906,7 @@ namespace FFXIV_TexTools2.IO
                                 }
                                 else
                                 {
-                                    br.ReadBytes(106);
+                                    br.ReadBytes(98);
 
                                     item.Icon = BitConverter.ToUInt16(br.ReadBytes(2).Reverse().ToArray(), 0).ToString();
 
@@ -1929,7 +1927,7 @@ namespace FFXIV_TexTools2.IO
 
                                     br.ReadBytes(lastText);
 
-                                    var name = Encoding.UTF8.GetString(br.ReadBytes(entrySize - (lastText + 160))).Replace("\0", "");
+                                    var name = Encoding.UTF8.GetString(br.ReadBytes(entrySize - (lastText + 152))).Replace("\0", "");
                                     item.ItemName = new string(name.Where(c => !char.IsControl(c)).ToArray());
 
                                     item.ItemCategory = Strings.Items;
