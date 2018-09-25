@@ -444,8 +444,6 @@
     <Content Include="sharpdx_direct3d11_1_effects_x86.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="x64\d3dcompiler_47.dll" />
-    <Content Include="x86\d3dcompiler_47.dll" />
     <Resource Include="Resources\PaypalDonateButton.png" />
     <Resource Include="Resources\ffxivmeteorlogo.png" />
     <Resource Include="Resources\ffxiv2.ico" />
