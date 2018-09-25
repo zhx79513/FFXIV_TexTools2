@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accessory" xml:space="preserve">
-    <value>Accessory</value>
+    <value>配饰</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>全部</value>
@@ -127,7 +127,7 @@
     <value>敖龙族</value>
   </data>
   <data name="Bishop_Autoturret" xml:space="preserve">
-    <value>Bishop Autoturret</value>
+    <value>象式浮空炮塔</value>
   </data>
   <data name="Body" xml:space="preserve">
     <value>身体</value>
@@ -145,7 +145,7 @@
     <value>身体 + 腿部 + 脚部</value>
   </data>
   <data name="Carbuncle" xml:space="preserve">
-    <value>石兽</value>
+    <value>宝石兽</value>
   </data>
   <data name="Character" xml:space="preserve">
     <value>角色</value>
@@ -163,22 +163,22 @@
     <value>精灵族</value>
   </data>
   <data name="Eos" xml:space="preserve">
-    <value>Eos</value>
+    <value>朝日小仙女</value>
   </data>
   <data name="Equipment_Decals" xml:space="preserve">
-    <value>Equipment Decals</value>
+    <value>装备Decals</value>
   </data>
   <data name="Error_DirectoryError" xml:space="preserve">
-    <value>Directory Error</value>
+    <value>目录错误</value>
   </data>
   <data name="Error_FileNotFound" xml:space="preserve">
-    <value>Unable to find file, please check your directories under settings</value>
+    <value>无法找到文件，请检查目录设置</value>
   </data>
   <data name="Etc" xml:space="preserve">
     <value>Etc</value>
   </data>
   <data name="Face" xml:space="preserve">
-    <value>面对</value>
+    <value>脸部</value>
   </data>
   <data name="Face_Paint" xml:space="preserve">
     <value>面妆</value>
@@ -193,7 +193,7 @@
     <value>食品</value>
   </data>
   <data name="Garuda_Egi" xml:space="preserve">
-    <value>Garuda-Egi</value>
+    <value>迦楼罗之灵</value>
   </data>
   <data name="Hair" xml:space="preserve">
     <value>发型</value>
@@ -214,10 +214,10 @@
     <value>人族 中原之民</value>
   </data>
   <data name="Ifrit_Egi" xml:space="preserve">
-    <value>Ifrit-Egi</value>
+    <value>伊芙利特之灵</value>
   </data>
   <data name="Iris" xml:space="preserve">
-    <value>眼</value>
+    <value>虹膜</value>
   </data>
   <data name="Lalafell" xml:space="preserve">
     <value>拉拉菲尔族</value>
@@ -268,7 +268,7 @@
     <value>召唤兽</value>
   </data>
   <data name="Ramuh_Egi" xml:space="preserve">
-    <value>Ramuh Egi</value>
+    <value>拉姆之灵</value>
   </data>
   <data name="Rings" xml:space="preserve">
     <value>戒指</value>
@@ -277,13 +277,13 @@
     <value>鲁加族</value>
   </data>
   <data name="Rook_Autoturret" xml:space="preserve">
-    <value>Rook Autoturret</value>
+    <value>车式浮空炮塔</value>
   </data>
   <data name="SearchBox" xml:space="preserve">
     <value>搜索 Textures</value>
   </data>
   <data name="Selene" xml:space="preserve">
-    <value>Selene</value>
+    <value>夕月小仙女</value>
   </data>
   <data name="Soul_Crystal" xml:space="preserve">
     <value>灵魂水晶</value>
@@ -295,7 +295,7 @@
     <value>尾巴</value>
   </data>
   <data name="Titan_Egi" xml:space="preserve">
-    <value>Titan-Egi</value>
+    <value>泰坦之灵</value>
   </data>
   <data name="Two_Handed" xml:space="preserve">
     <value>双手</value>
