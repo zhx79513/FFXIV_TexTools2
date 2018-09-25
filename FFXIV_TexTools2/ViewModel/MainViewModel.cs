@@ -619,7 +619,8 @@ namespace FFXIV_TexTools2.ViewModel
         /// </summary>
         private void SearchTextChanged()
         {
-            if (SearchText.Length > 2)
+			// EDIT: 修改搜索文本响应字数，从3降至2
+			if (SearchText.Length > 1)
             {
                 Dictionary<string, TreeNode> catDict = new Dictionary<string, TreeNode>();
 
