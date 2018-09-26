@@ -231,6 +231,9 @@
   <data name="Legs_Feet" xml:space="preserve">
     <value>腿部 + 脚部</value>
   </data>
+  <data name="MainWindow_UI_Menu_Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
   <data name="Main_Hand" xml:space="preserve">
     <value>主手</value>
   </data>

@@ -8,6 +8,7 @@
     xmlns:hx="http://helix-toolkit.org/wpf/SharpDX"
     xmlns:shader="clr-namespace:FFXIV_TexTools2.Shader"
     xmlns:views ="clr-namespace:FFXIV_TexTools2.Views"
+    xmlns:res="clr-namespace:FFXIV_TexTools2.Resources"
     x:Class="FFXIV_TexTools2.MainWindow"
     mc:Ignorable="d"
     Title="FFXIV TexTools" Height="650" Width="1100" Icon="Resources/ffxiv2.ico" WindowStartupLocation="CenterScreen" Closed="Window_Closed">

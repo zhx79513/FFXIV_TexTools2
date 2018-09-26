@@ -702,4 +702,7 @@
   <data name="DemiIMCFolder" xml:space="preserve">
     <value>chara/demihuman/d{0}/obj/equipment/e{1}</value>
   </data>
+  <data name="MainWindow_UI_Menu_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
 </root>
