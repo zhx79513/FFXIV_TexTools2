@@ -62,6 +62,9 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\ffxiv2.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cyotek.Drawing.BitmapFont, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
       <HintPath>..\packages\Cyotek.Drawing.BitmapFont.1.3.2\lib\net20\Cyotek.Drawing.BitmapFont.dll</HintPath>
@@ -437,19 +440,11 @@
   <ItemGroup>
     <Resource Include="Resources\ImportFile_16x.png" />
     <Resource Include="Resources\textureDNE.png" />
-    <Content Include="lib\d3dcompiler_47.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="lib\d3dcompiler_47_64.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="lib\d3dcompiler_47.dll" />
+    <Content Include="lib\d3dcompiler_47_64.dll" />
     <Content Include="lib\sharpdx_direct3d11_1_effects_arm.dll" />
-    <Content Include="lib\sharpdx_direct3d11_1_effects_x64.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="lib\sharpdx_direct3d11_1_effects_x86.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="lib\sharpdx_direct3d11_1_effects_x64.dll" />
+    <Content Include="lib\sharpdx_direct3d11_1_effects_x86.dll" />
     <Resource Include="Resources\PaypalDonateButton.png" />
     <Resource Include="Resources\ffxivmeteorlogo.png" />
     <Resource Include="Resources\ffxiv2.ico" />
@@ -474,6 +469,10 @@
     <Error Condition="!Exists('..\packages\Microsoft.HLSL.CSharpVB.1.0.1\build\Microsoft.HLSL.CSharpVB.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.HLSL.CSharpVB.1.0.1\build\Microsoft.HLSL.CSharpVB.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.CSharp.FxCopAnalyzers.1.0.0.0-beta2\build\Microsoft.CodeAnalysis.CSharp.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.CSharp.FxCopAnalyzers.1.0.0.0-beta2\build\Microsoft.CodeAnalysis.CSharp.FxCopAnalyzers.props'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)lib\*.dll" "$(TargetDir)" /y
+xcopy "$(TargetDir)*.dll" "$(TargetDir)lib\" /y</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
